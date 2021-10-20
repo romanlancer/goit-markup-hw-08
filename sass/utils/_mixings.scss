@@ -1,0 +1,5 @@
+@mixin centralFlex($type: flex) {
+	display: $type;
+	justify-content: center;
+	align-items: center;
+}
