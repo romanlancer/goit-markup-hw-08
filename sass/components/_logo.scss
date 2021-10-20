@@ -1,8 +1,6 @@
 .logo {
 	font-family: Raleway;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
+	@include fonts(1.19, 700, 26px, unset, 0.03em, none);
 	margin-right: 93px;
 	&__accent {
 		color: $accent-color;

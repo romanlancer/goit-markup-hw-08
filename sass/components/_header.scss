@@ -15,9 +15,7 @@
 
 .navigation-list {
 	display: flex;
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include fonts(1.14, 500, 14px, unset, 0.02em, none);
 }
 
 .navigation-list__item {
@@ -41,30 +39,14 @@
 	position: relative;
 
 	&::after {
-		content: " ";
-		position: absolute;
-		width: 48px;
-		height: 4px;
-		background-color: $accent-color;
-		bottom: -1px;
-		right: 0;
-		border-radius: 2px;
+		@include headerBeforeAfter(48px);
 	}
 }
 
 .navigation-list__link--current-portfolio {
-	color: $accent-color;
-	position: relative;
-
+	@extend .navigation-list__link--current;
 	&::after {
-		content: " ";
-		position: absolute;
-		width: 78px;
-		height: 4px;
-		background-color: $accent-color;
-		bottom: -1px;
-		right: 0;
-		border-radius: 2px;
+		@include headerBeforeAfter(78px);
 	}
 }
 
@@ -76,9 +58,7 @@
 .contacts-header__contacts-link {
 	display: flex;
 	align-items: center;
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@include fonts(1.14, 500, 14px, unset, 0.02em, none);
 	color: $primary-text-color;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

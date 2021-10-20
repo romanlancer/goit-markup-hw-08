@@ -6,19 +6,15 @@
 	line-height: 1.71;
 
 	&__title {
+		@include fonts(1.14, 700, 14px, unset, 0.03em, uppercase);
 		margin-bottom: 10px;
-		font-weight: 700;
-		font-size: inherit;
-		line-height: 1.14;
-		text-transform: uppercase;
 		color: $secondary-text-color;
 	}
 
 	&__box {
 		@include centralFlex();
-		height: 120px;
+		@include objectForm(100%, 120px, 4px);
 		margin-bottom: 30px;
-		border-radius: 4px;
 		background-color: $team-background-color;
 	}
 

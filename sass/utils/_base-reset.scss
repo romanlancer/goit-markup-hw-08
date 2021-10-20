@@ -25,6 +25,9 @@ a {
 	text-decoration: none;
 	/* Убираем подчёркивание для всех ссылок */
 }
+a, button {
+	cursor: pointer;
+}
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -44,3 +47,4 @@ a {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+
