@@ -5,13 +5,16 @@
 	color: $background-color;
 	// max-width: 1600px;
 	max-width: 480px;
-	background-size: ;
 	padding: 200px 0px;
 	margin: 0 auto;
 
 	&__title {
 		margin-bottom: 30px;
-		@include fonts(1.36, 900, 44px, center, 0.06em, uppercase);
+		@include fonts(1.62, 900, 26px, center, 0.06em, uppercase);
+
+		@media screen and (min-width: $desktop) {
+			@include fonts(1.36, 900, 44px, center, 0.06em, uppercase);
+		}
 	}
 }
 .hero__button {

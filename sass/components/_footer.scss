@@ -5,8 +5,23 @@
 }
 
 .footer__main-flex {
-	// display: flex;
-	// align-items: baseline;
+	@media screen and (min-width: $tablet) and (max-width: 1199px) {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		align-items: baseline;
+	}
+}
+
+.footer__links {
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .location {
@@ -44,7 +59,14 @@
 .footer-socials {
 	display: flex;
 	flex-direction: column;
-	// margin-left: 70px;
+	align-items: center;
+	@media screen and (max-width: 767px) {
+		margin-top: 60px;
+	}
+	@media screen and (min-width: $desktop) {
+		margin-left: 70px;
+		align-items: flex-start;
+	}
 
 	&__invitation {
 		@include fonts(1.14, 700, 14px, unset, 0.03em, uppercase);
@@ -53,8 +75,8 @@
 	}
 
 	&__link {
-		// display: flex;
-		justify-content: start;
+		display: flex;
+		justify-content: center;
 	}
 
 	&__icon {
@@ -63,7 +85,7 @@
 }
 
 .footer-socials__list {
-	// display: flex;
+	display: flex;
 
 	&:not(:last-child) {
 		margin-right: 10px;
@@ -84,13 +106,25 @@
 }
 
 .signup-form {
-	display: flex;
-	margin-left: 93px;
-	align-items: flex-end;
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 60px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		margin-left: 93px;
+		align-items: flex-end;
+	}
 
 	&__label {
-		@include fonts(1.14, 700, 14px, unset, 0.03em, uppercase);
+		@include fonts(1.14, 700, 14px, center, 0.03em, uppercase);
 		color: $background-color;
+		@media screen and (min-width: $desktop) {
+			@include fonts(1.14, 700, 14px, unset, 0.03em, uppercase);
+		}
 	}
 
 	&__icon {
@@ -103,24 +137,35 @@
 	display: block;
 	margin-top: 20px;
 	padding-left: 16px;
-	@include objectForm(358px, 50px, 4px);
+	@include objectForm(450px, 50px, 4px);
+	@include fonts(1.25, 400, 16px, unset, 0.03em, none);
 	background-color: $hero-and-footer-background-color;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-	@include fonts(1.25, 400, 16px, unset, 0.03em, none);
 	color: rgba(255, 255, 255, 0.6);
+	@media screen and (min-width: $desktop) {
+		@include objectForm(358px, 50px, 4px);
+	}
 
 	&::placeholder {
-		@include fonts(1.25, 400, 16px, unset, 0.03em, none);
+		@include fonts(1.25, 400, 16px, left, 0.03em, none);
 		color: rgba(255, 255, 255, 0.6);
+		@media screen and (min-width: $desktop) {
+			@include fonts(1.25, 400, 16px, unset, 0.03em, none);
+		}
 	}
 }
 
 .signup-form__button {
 	@include centralFlex();
 	@extend %general-buttons;
-	margin-left: 12px;
+	margin-top: 20px;
 	padding: 10px 28px 10px 29px;
+
+	@media screen and (min-width: $desktop) {
+		margin-top: 0;
+		margin-left: 12px;
+	}
 
 	&:hover,
 	&:focus {

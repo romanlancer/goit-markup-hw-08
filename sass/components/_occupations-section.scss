@@ -1,18 +1,22 @@
 .occupations {
 	padding-top: 0;
 
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
+
 	&__title {
 		@extend %title-section;
 	}
 
 	&__list {
-		// // display: flex;
-		// margin-right: calc(-1 * #{$card-set-gap});
+		display: flex;
+		margin-right: calc(-1 * #{$card-set-gap});
 	}
 
 	&__image {
-		// flex-basis: calc(100% / 3 - #{$card-set-gap});
-		// margin-right: $card-set-gap;
+		flex-basis: calc(100% / 3 - #{$card-set-gap});
+		margin-right: $card-set-gap;
 		position: relative;
 	}
 

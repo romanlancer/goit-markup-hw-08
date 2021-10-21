@@ -1,7 +1,12 @@
 .logo {
 	font-family: Raleway;
-	@include fonts(1.19, 700, 26px, unset, 0.03em, none);
-	margin-right: 93px;
+	@include fonts(1.17, 700, 24px, unset, 0.03em, none);
+
+	@media screen and (min-width: $desktop) {
+		@include fonts(1.19, 700, 26px, unset, 0.03em, none);
+		margin-right: 93px;
+	}
+
 	&__accent {
 		color: $accent-color;
 	}
