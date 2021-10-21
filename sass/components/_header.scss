@@ -4,7 +4,7 @@
 }
 .main-nav,
 .header-nav {
-	display: flex;
+	// display: flex;
 	align-items: center;
 }
 .link {
@@ -14,7 +14,7 @@
 }
 
 .navigation-list {
-	display: flex;
+	// display: flex;
 	@include fonts(1.14, 500, 14px, unset, 0.02em, none);
 }
 
@@ -51,7 +51,7 @@
 }
 
 .contacts-header {
-	display: flex;
+	// display: flex;
 	margin-left: auto;
 }
 

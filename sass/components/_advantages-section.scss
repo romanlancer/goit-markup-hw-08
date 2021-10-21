@@ -19,12 +19,12 @@
 	}
 
 	&__list {
-		display: flex;
-		margin-right: calc(-1 * #{$card-set-gap});
+		// display: flex;
+		// margin-right: calc(-1 * #{$card-set-gap});
 	}
 
 	&__item {
-		flex-basis: calc(100% / 4 - #{$card-set-gap});
-		margin-right: $card-set-gap;
+		// flex-basis: calc(100% / 4 - #{$card-set-gap});
+		// margin-right: $card-set-gap;
 	}
 }

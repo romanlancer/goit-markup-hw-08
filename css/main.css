@@ -31,7 +31,8 @@ a {
   /* Убираем подчёркивание для всех ссылок */
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -47,9 +48,26 @@ a, button {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -136,9 +154,6 @@ a, button {
 
 .main-nav,
 .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -151,9 +166,6 @@ a, button {
 }
 
 .navigation-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   line-height: 1.14;
   font-weight: 500;
   font-size: 14px;
@@ -204,9 +216,6 @@ a, button {
 }
 
 .contacts-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 
@@ -237,7 +246,7 @@ a, button {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img-min.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-min.jpg);
   color: #ffffff;
-  max-width: 1600px;
+  min-width: 480px;
   padding: 200px 0px;
   margin: 0 auto;
 }
@@ -524,34 +533,11 @@ a, button {
   background-color: #f5f4fa;
 }
 
-.advantages__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: calc(-1 * 30px);
-}
-
-.advantages__item {
-  -ms-flex-preferred-size: calc(100% / 4 - 30px);
-      flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
-}
-
 .occupations {
   padding-top: 0;
 }
 
-.occupations__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: calc(-1 * 30px);
-}
-
 .occupations__image {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
-  margin-right: 30px;
   position: relative;
 }
 
@@ -579,23 +565,19 @@ a, button {
 
 .team {
   background-color: #f5f4fa;
+  width: 100%;
 }
 
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: calc(-1 * 30px);
+  width: 100%;
 }
 
 .team__card {
-  -ms-flex-preferred-size: calc(100% / 4 - 30px);
-      flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
 }
 
 .team__article {
@@ -610,6 +592,7 @@ a, button {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 32px;
+  width: 100%;
 }
 
 .team__member {
@@ -662,19 +645,6 @@ a, button {
 
 .team__socials__icon-list:not(:last-child) {
   margin-right: 10px;
-}
-
-.clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: calc(-1 * 30px);
-}
-
-.clients__name {
-  -ms-flex-preferred-size: calc(100% / 6 - 30px);
-      flex-basis: calc(100% / 6 - 30px);
-  margin-right: 30px;
 }
 
 .clients__ref {
@@ -842,15 +812,6 @@ a, button {
   background-color: #2f303a;
 }
 
-.footer__main-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .location {
   display: block;
   margin-top: 20px;
@@ -891,7 +852,6 @@ a, button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 70px;
 }
 
 .footer-socials__invitation {
@@ -906,9 +866,6 @@ a, button {
 }
 
 .footer-socials__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
@@ -916,12 +873,6 @@ a, button {
 
 .footer-socials__icon {
   fill: currentColor;
-}
-
-.footer-socials__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-socials__list:not(:last-child) {

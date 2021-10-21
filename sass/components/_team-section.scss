@@ -1,21 +1,23 @@
 .team {
 	background-color: $team-background-color;
-
+	width: 100%;
 	&__title {
 		@extend %title-section;
 	}
 
 	&__list {
-		display: flex;
-		margin-right: calc(-1 * #{$card-set-gap});
+		// display: flex;
+		// margin-right: calc(-1 * #{$card-set-gap});
+		width: 100%;
 	}
 
 	&__card {
-		flex-basis: calc(100% / 4 - #{$card-set-gap});
-		margin-right: $card-set-gap;
+		// flex-basis: calc(100% / 4 - #{$card-set-gap});
+		// margin-right: $card-set-gap;
 		background: $background-color;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 4px 4px;
+		width: 100%;
 	}
 
 	&__article {
@@ -23,6 +25,7 @@
 		flex-direction: column;
 		align-items: center;
 		padding: 30px 32px;
+		width: 100%;
 	}
 
 	&__member {

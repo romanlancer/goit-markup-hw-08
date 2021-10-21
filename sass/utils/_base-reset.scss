@@ -25,7 +25,8 @@ a {
 	text-decoration: none;
 	/* Убираем подчёркивание для всех ссылок */
 }
-a, button {
+a,
+button {
 	cursor: pointer;
 }
 .visually-hidden {
@@ -39,12 +40,22 @@ a, button {
 	clip: rect(0 0 0 0);
 }
 .container {
-	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+
+	@media screen and (min-width: $mobile) {
+		width: $mobile;
+	}
+
+	@media screen and (min-width: $tablet) {
+		width: $tablet;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: $desktop;
+	}
 }
 .section {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-
