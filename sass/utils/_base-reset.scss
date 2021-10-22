@@ -42,7 +42,6 @@ button {
 .container {
 	margin: 0 auto;
 	padding: 0 15px;
-	width: $mobile;
 
 	@media screen and (min-width: $mobile) {
 		width: $mobile;

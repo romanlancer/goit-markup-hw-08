@@ -1,7 +1,7 @@
 .jobs {
 	&__buttons-list {
-		display: flex;
-		justify-content: center;
+		// display: flex;
+		// justify-content: center;
 		margin-bottom: 50px;
 	}
 }
@@ -57,8 +57,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		@include fonts(1.88, 400, 16px, unset, 0.03em, none);
-		margin-right: calc(-1 * #{$card-set-gap});
-		margin-bottom: calc(-1 * #{$card-set-gap});
+		// margin-right: calc(-1 * #{$card-set-gap});
+		// margin-bottom: calc(-1 * #{$card-set-gap});
 	}
 
 	&__image {
@@ -81,9 +81,9 @@
 }
 
 .jobs__card {
-	flex-basis: calc(100% / 3 - #{$card-set-gap});
-	margin-right: $card-set-gap;
-	margin-bottom: $card-set-gap;
+	// flex-basis: calc(100% / 3 - #{$card-set-gap});
+	// margin-right: $card-set-gap;
+	// margin-bottom: $card-set-gap;
 	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover {
