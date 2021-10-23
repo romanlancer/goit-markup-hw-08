@@ -5,12 +5,9 @@
 
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 		margin-right: calc(-1 * #{$card-set-gap});
 		margin-bottom: calc(-1 * #{$card-set-gap});
-		flex-wrap: wrap;
-		@media screen and (min-width: $desktop) {
-			margin-right: calc(-1 * #{$card-set-gap});
-		}
 	}
 
 	&__name {
@@ -24,7 +21,6 @@
 
 		@media screen and (min-width: $desktop) {
 			flex-basis: calc(100% / 6 - #{$card-set-gap});
-			margin-right: $card-set-gap;
 		}
 	}
 }
