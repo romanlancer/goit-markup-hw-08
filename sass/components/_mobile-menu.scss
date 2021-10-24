@@ -1,0 +1,16 @@
+.menu-toggle {
+	background-color: $background-color;
+	margin-left: auto;
+}
+.menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: $background-color;
+	transform: translateX(100%);
+}
+.menu-container.is-open {
+	transform: translateX(0);
+}

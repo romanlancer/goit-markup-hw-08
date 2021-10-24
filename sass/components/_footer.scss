@@ -120,6 +120,7 @@
 	}
 
 	&__label {
+		display: block;
 		@include fonts(1.14, 700, 14px, center, 0.03em, uppercase);
 		color: $background-color;
 		@media screen and (min-width: $desktop) {
@@ -137,12 +138,15 @@
 	display: block;
 	margin-top: 20px;
 	padding-left: 16px;
-	@include objectForm(450px, 50px, 4px);
+	@include objectForm(100%, 50px, 4px);
 	@include fonts(1.25, 400, 16px, unset, 0.03em, none);
 	background-color: $hero-and-footer-background-color;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	color: rgba(255, 255, 255, 0.6);
+	@media screen and (min-width: $mobile) {
+		@include objectForm(450px, 50px, 4px);
+	}
 	@media screen and (min-width: $desktop) {
 		@include objectForm(358px, 50px, 4px);
 	}

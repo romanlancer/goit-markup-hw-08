@@ -1,6 +1,11 @@
 .logo {
 	font-family: Raleway;
 	@include fonts(1.17, 700, 24px, unset, 0.03em, none);
+	padding: 16px 0px;
+
+	@media screen and (min-width: $tablet) {
+		margin-right: 88px;
+	}
 
 	@media screen and (min-width: $desktop) {
 		@include fonts(1.19, 700, 26px, unset, 0.03em, none);
