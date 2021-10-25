@@ -24,7 +24,7 @@
 .navigation-list {
 	display: flex;
 	@include fonts(1.14, 500, 14px, unset, 0.02em, none);
-	@media screen and (max-width: 785px) {
+	@media screen and (max-width: 767px) {
 		display: none;
 	}
 }
@@ -64,7 +64,7 @@
 .contacts-header {
 	display: flex;
 	margin-left: auto;
-	@media screen and (max-width: 785px) {
+	@media screen and (max-width: 767px) {
 		display: none;
 	}
 	@media screen and (min-width: $tablet) and (max-width: 1199px) {
