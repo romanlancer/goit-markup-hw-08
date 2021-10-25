@@ -48,6 +48,7 @@ button {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -247,7 +248,7 @@ button {
 }
 
 .menu-contacts {
-  margin-top: 200px;
+  margin-top: 220px;
 }
 
 .menu-contacts__item {
