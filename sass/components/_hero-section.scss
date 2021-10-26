@@ -1,5 +1,6 @@
 .hero {
 	background-color: $hero-and-footer-background-color;
+	background-size: cover;
 	background-image: linear-gradient(
 			to right,
 			rgba(47, 48, 58, 0.4),
@@ -7,7 +8,8 @@
 		),
 		url(../images/header__mobile-min.jpg);
 	padding: 118px 0px;
-	background-size: cover;
+	color: $background-color;
+	margin: 0 auto;
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
@@ -46,8 +48,6 @@
 			background-image: url(../images/header_desktop__3x-min.jpg);
 		}
 	}
-	color: $background-color;
-	margin: 0 auto;
 
 	&__title {
 		margin-bottom: 30px;
