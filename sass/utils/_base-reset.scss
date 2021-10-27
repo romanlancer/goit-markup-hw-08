@@ -1,3 +1,7 @@
+body,
+html {
+	overflow-x: hidden;
+}
 body {
 	font-family: "Roboto", sans-serif;
 	letter-spacing: 0.03em;
@@ -39,7 +43,6 @@ button {
 	clip: rect(0 0 0 0);
 }
 .container {
-	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 
