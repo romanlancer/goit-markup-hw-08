@@ -37,3 +37,8 @@
 	width: $width;
 	height: $height;
 }
+
+@mixin modalWidth($width, $height) {
+	min-width: $width;
+	min-height: $height;
+}
