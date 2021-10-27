@@ -1,7 +1,7 @@
 .page-header {
 	background-color: $background-color;
 	border-bottom: 1px solid #ececec;
-	position: relative;
+	// position: relative;
 }
 
 .header-nav {
@@ -30,7 +30,7 @@
 	@media screen and (min-width: $tablet) {
 		margin-left: 88px;
 	}
-	@media screen and (min-width: $desktop) {		
+	@media screen and (min-width: $desktop) {
 		margin-left: 93px;
 	}
 }

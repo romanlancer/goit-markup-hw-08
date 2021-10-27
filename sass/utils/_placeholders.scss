@@ -50,3 +50,10 @@
 	border: 1px solid #eeeeee;
 	border-top: 0px;
 }
+%hero__gradient {
+	background-image: linear-gradient(
+		to right,
+		rgba(47, 48, 58, 0.4),
+		rgba(47, 48, 58, 0.4)
+	);
+}
