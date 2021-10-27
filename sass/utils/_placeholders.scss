@@ -19,7 +19,8 @@
 	letter-spacing: 0.06em;
 	background-color: $accent-color;
 	color: $background-color;
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -42,4 +43,10 @@
 %subscribe-form_hover-focus {
 	border-color: $accent-color;
 	fill: $accent-color;
+}
+
+%jobs__article__tablet {
+	padding: 20px 24px;
+	border: 1px solid #eeeeee;
+	border-top: 0px;
 }

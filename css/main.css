@@ -132,6 +132,12 @@ button {
   fill: #2196f3;
 }
 
+.jobs__article, .jobs__article__tablet {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0px;
+}
+
 .logo {
   font-family: Raleway;
   line-height: 1.17;
@@ -143,12 +149,6 @@ button {
   padding: 16px 0px;
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     line-height: 1.19;
@@ -157,7 +157,6 @@ button {
     text-align: unset;
     letter-spacing: 0.03em;
     text-transform: none;
-    margin-right: 93px;
   }
 }
 
@@ -361,6 +360,18 @@ button {
 @media screen and (max-width: 767px) {
   .navigation-list {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-list {
+    margin-left: 93px;
   }
 }
 
@@ -1249,10 +1260,10 @@ button {
   color: #212121;
 }
 
-.jobs__article {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: 0px;
+@media screen and (min-width: 768px) {
+  .jobs__article__tablet {
+    padding-bottom: 56px;
+  }
 }
 
 .jobs__text {
