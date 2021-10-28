@@ -24,7 +24,7 @@
 
 .menu-container {
 	@include positioning(fixed, 0, 0, 100vw, 100vh);
-	padding: 48px 83px 48px 40px;
+	padding: 48px 10px;
 	background-color: $background-color;
 	transform: translateX(100%);
 	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,6 +36,9 @@
 .menu-nav {
 	&__item {
 		@include fonts(1.18, 500, 40px, unset, 0.02em, none);
+		@media screen and (max-width: 479px) {
+			@include fonts(1.16, 500, 28px, unset, 0.02em, none);
+		}
 
 		&:not(:last-child) {
 			margin-bottom: 32px;
@@ -53,42 +56,48 @@
 }
 .menu-contacts {
 	margin-top: 240px;
+	@media screen and (max-width: 479px) {
+		margin-top: 120px;
+	}
 	&__item {
 		@include fonts(1.17, 500, 24px, unset, 0.02em, none);
+		@media screen and (max-width: 479px) {
+			@include fonts(1.15, 500, 18px, unset, 0.02em, none);
+		}
 		&:not(:last-child) {
 			margin-bottom: 32px;
+			color: $accent-color;
 			@include fonts(1.18, 500, 34px, unset, 0.02em, none);
+			@media screen and (max-width: 479px) {
+				margin-bottom: 16px;
+				@include fonts(1.14, 500, 24px, unset, 0.02em, none);
+			}
 		}
 	}
 	&__link {
 		color: inherit;
-		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-		&:hover,
-		&:focus {
+		&:not(:last-child) {
 			color: $accent-color;
 		}
 	}
 }
 .menu-socials {
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	margin-top: 64px;
+
 	&__item {
 		@include fonts(1.22, 500, 18px, unset, 0.02em, none);
-
+		@media screen and (max-width: 479px) {
+			@include fonts(1.18, 500, 14px, unset, 0.02em, none);
+		}
 		&:not(:last-child) {
 			padding-right: 10px;
+			margin-right: 10px;
 			border-right: 1px solid rgba(33, 33, 33, 0.2);
 		}
 	}
 	&__link {
-		color: inherit;
-		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-		&:hover,
-		&:focus {
-			color: $accent-color;
-		}
+		color: $accent-color;
 	}
 }

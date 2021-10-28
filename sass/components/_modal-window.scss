@@ -17,6 +17,11 @@
 	position: absolute;
 	top: 8px;
 	right: 8px;
+	@media screen and (max-width: 479px) {
+		@include objectForm(25px, 25px, 50%);
+		top: 4px;
+		right: 4px;
+	}
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: $background-color;
 	transform: scale(1);
@@ -37,7 +42,7 @@
 	opacity: 1;
 
 	@media screen and (max-width: 479px) {
-		@include modalWidth(90%, 90%);
+		@include modalWidth(95%, auto);
 	}
 	@media screen and (min-width: $mobile) {
 		@include modalWidth(450px, 609px);

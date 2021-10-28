@@ -1,6 +1,10 @@
 .clients {
 	&__title {
 		@extend %title-section;
+		@media screen and (max-width: 1199px) {
+			@include fonts(1.18, 700, 28px, center, 0.03em, none);
+			margin-bottom: 30px;
+		}
 	}
 
 	&__list {

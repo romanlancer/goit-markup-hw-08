@@ -1,5 +1,9 @@
 .subscribe {
 	padding: 40px;
+	@media screen and (max-width: 479px) {
+		padding: 20px;
+		padding-top: 30px;
+	}
 
 	&__label {
 		@include fonts(1.17, 400, 12px, unset, 0.01em, none);
@@ -10,6 +14,9 @@
 		@include fonts(1.15, 700, 20px, center, 0.03em, none);
 		color: $secondary-text-color;
 		margin-bottom: 12px;
+		@media screen and (max-width: 479px) {
+			@include fonts(1.15, 500, 16px, center, 0.03em, none);
+		}
 	}
 }
 
@@ -49,6 +56,9 @@
 .subscribe__textarea-input {
 	display: block;
 	@include objectForm(100%, 120px, 4px);
+	@media screen and (max-width: 479px) {
+		@include objectForm(100%, 60px, 4px);
+	}
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	margin-top: 4px;
 	margin-bottom: 20px;
@@ -68,11 +78,15 @@
 .subscribe-checkbox {
 	@include centralFlex();
 	line-height: 1.71;
+	margin-bottom: 30px;
+	cursor: pointer;
 	@media screen and (max-width: 1199px) {
 		@include fonts(1.17, 400, 12px, unset, 0.03em, none);
 	}
-	margin-bottom: 30px;
-	cursor: pointer;
+	@media screen and (max-width: 479px) {
+		margin-bottom: 15px;
+		@include fonts(0.9, 400, 12px, unset, 0.03em, none);
+	}
 
 	&__icon {
 		display: inline-block;
