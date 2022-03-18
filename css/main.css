@@ -1397,7 +1397,7 @@ button {
   color: #212121;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .jobs__article__tablet {
     padding-bottom: 56px;
   }
@@ -1469,6 +1469,9 @@ button {
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 

@@ -95,7 +95,7 @@
 	}
 	&__article__tablet {
 		@extend %jobs__article__tablet;
-		@media screen and (min-width: $tablet) {
+		@media screen and (min-width: $tablet) and (max-width: 1199px) {
 			padding-bottom: 56px;
 		}
 	}

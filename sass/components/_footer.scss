@@ -9,6 +9,7 @@
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
+		align-items: baseline;
 	}
 	@media screen and (min-width: $desktop) {
 		display: flex;
